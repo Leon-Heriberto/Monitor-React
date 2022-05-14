@@ -1,0 +1,1 @@
+Copyright 2021 Nidec GA (Developed by Syncronik Info Solutions).
