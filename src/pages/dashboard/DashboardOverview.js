@@ -99,14 +99,21 @@ export default () => {
       localStorage.setItem("pathBaseToCallAPINotification", "em10vs0009:9393")
       isChangedLine();
     }
-    else {
+    else if(e == 'line-two'){
       setFilter('Línea 2')
       localStorage.setItem("line", "2")
       localStorage.setItem("pathBaseToCallAPI", "em10vs0009:9898")
       localStorage.setItem("pathBaseToCallAPINotification", "em10vs0009:9797")
       isChangedLine();
     }
+    else {
+      setFilter('Línea 6')
+      localStorage.setItem("line", "6")
+      localStorage.setItem("pathBaseToCallAPI", "em10vs0009:9999")
+      localStorage.setItem("pathBaseToCallAPINotification", "em10vs0009:9494")
+      isChangedLine();
   }
+}
 
 
   return (
@@ -126,7 +133,7 @@ export default () => {
     </Dropdown.Toggle>
 
     <Dropdown.Menu>
-      {filter == 'Línea 2' ?  <Dropdown.Item  eventKey="line-one">Línea 1</Dropdown.Item> :  <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item>}
+    {filter == 'Línea 2' ?  <Dropdown.Item  eventKey="line-one">Línea 1</Dropdown.Item> :filter == 'Línea 6'?   <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item> : <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item>} 
      
     </Dropdown.Menu>
       </Dropdown>
