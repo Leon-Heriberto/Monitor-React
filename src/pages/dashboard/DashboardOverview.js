@@ -133,7 +133,9 @@ export default () => {
     </Dropdown.Toggle>
 
     <Dropdown.Menu>
-    {filter == 'Línea 2' ?  <Dropdown.Item  eventKey="line-one">Línea 1</Dropdown.Item> :filter == 'Línea 6'?   <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item> : <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item>} 
+    <Dropdown.Item  eventKey="line-one">Línea 1</Dropdown.Item>
+    <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item> 
+    <Dropdown.Item  eventKey="line-six">Línea 6</Dropdown.Item>
      
     </Dropdown.Menu>
       </Dropdown>
