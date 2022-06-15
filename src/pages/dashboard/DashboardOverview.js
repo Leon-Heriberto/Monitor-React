@@ -106,6 +106,13 @@ export default () => {
       localStorage.setItem("pathBaseToCallAPINotification", "em10vs0009:9797")
       isChangedLine();
     }
+    else if(e == 'line-five'){
+      setFilter('Línea 5')
+      localStorage.setItem("line", "5")
+      localStorage.setItem("pathBaseToCallAPI", "em10vs0009:9090")
+      localStorage.setItem("pathBaseToCallAPINotification", "em10vs0009:9595")
+      isChangedLine();
+    }
     else {
       setFilter('Línea 6')
       localStorage.setItem("line", "6")
@@ -134,7 +141,8 @@ export default () => {
 
     <Dropdown.Menu>
     <Dropdown.Item  eventKey="line-one">Línea 1</Dropdown.Item>
-    <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item> 
+    <Dropdown.Item  eventKey="line-two">Línea 2</Dropdown.Item>
+    <Dropdown.Item  eventKey="line-five">Línea 5</Dropdown.Item>  
     <Dropdown.Item  eventKey="line-six">Línea 6</Dropdown.Item>
      
     </Dropdown.Menu>
